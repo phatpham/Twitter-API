@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaft.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Tweets</title>
+</head>
+<body>
+<tr th:each="tweet: ${tweets}">
+    <td th:text="${tweet}">Tweet</td>
+</tr>
+</body>
+</html>
